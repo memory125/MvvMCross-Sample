@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto/SimpleTest.Droid"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textFirstName"
+        android:textColor="@android:color/primary_text_dark" />
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text FirstName"
+        android:textColor="@android:color/holo_orange_dark" />
+    <TextView
+        android:text="@string/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"      
+        android:id="@+id/textLastName"
+        android:textColor="@android:color/primary_text_dark" />
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_light"
+        local:MvxBind="Text LastName" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text FullName"
+        android:id="@+id/textFullName"
+        android:textColor="@android:color/holo_blue_dark" />
+</LinearLayout>
