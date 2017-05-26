@@ -23,7 +23,7 @@ namespace SimpleTest.iOS.Views
         UIKit.UITextField LastNameTextField { get; set; }
 
         [Outlet]
-        UIKit.UILabel FullNameLabe { get; set; }
+        UIKit.UILabel FullNameLabel { get; set; }
 
 
         void ReleaseDesignerOutlets()
@@ -52,10 +52,10 @@ namespace SimpleTest.iOS.Views
                 LastNameTextField = null;
             }
 
-            if (FullNameLabe != null)
+            if (FullNameLabel != null)
             {
-                FullNameLabe.Dispose();
-                FullNameLabe = null;
+                FullNameLabel.Dispose();
+                FullNameLabel = null;
             }
         }
     }
