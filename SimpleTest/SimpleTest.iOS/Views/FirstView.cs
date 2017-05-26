@@ -7,9 +7,10 @@ using UIKit;
 
 namespace SimpleTest.iOS.Views
 {
+    [MvxFromStoryboard]
     public partial class FirstView : MvxViewController
     {
-        public FirstView() : base("FirstView", null)
+        public FirstView(IntPtr handle) : base(handle)
         {
         }
 
@@ -23,7 +24,7 @@ namespace SimpleTest.iOS.Views
             var set = this.CreateBindingSet<FirstView, MainViewModel>();
             set.Bind(FirstNameTextField).To(vm => vm.FirstName);
             set.Bind(LastNameTextField).To(vm => vm.LastName);
-            set.Bind(FullNameLabe).To(vm => vm.FullName);
+            set.Bind(FullNameLabel).To(vm => vm.FullName);
             set.Apply();
         }
     }
