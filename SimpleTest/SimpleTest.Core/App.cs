@@ -14,15 +14,8 @@ namespace SimpleTest.Core
             //RegisterServices();
             //InitializeServices();
 
-            try
-            {
-                RegisterAppStart<MainViewModel>();
-            }
-            catch (Exception e)
-            {
-                throw ;
-            }
-
+           
+            RegisterAppStart<MainViewModel>();    
         }
 
         //private void RegisterServices()
